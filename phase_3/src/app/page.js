@@ -31,6 +31,10 @@ export default function Home() {
         </div>
       </div>
 
+      <div className="flex items-center justify-center">
+        <Image src="/ingraph_logo.png" height={200} width={300} alt="ingraph logo"/>
+      </div>
+
       <div className="text-center mt-10">
         <h1 className="font-bold text-3xl">Make a <span className="text-green-700 font-extrabold">great</span> impression.</h1>
         <p className="font-thin text-stone-800 text-md mx-32 mt-5">Give your brand a stand-out look with striking design and first-class custom signs and prints. Let Ingraph be your partner in your business needs in Calgary.</p>

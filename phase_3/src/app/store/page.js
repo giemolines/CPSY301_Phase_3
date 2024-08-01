@@ -1,3 +1,4 @@
+"use client"
 import React,{useState} from 'react';
 import './App.css';
 
@@ -11,7 +12,7 @@ import Product from './components/Product/Product';
 
 
 
-function App() {
+export default function Store() {
 
   // eslint-disable-next-line no-unused-vars
   const[isopen, setOpen] = useState(false);
@@ -85,4 +86,3 @@ function App() {
   );
 }
 
-export default App;

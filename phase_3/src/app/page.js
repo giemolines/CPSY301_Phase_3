@@ -1,4 +1,5 @@
 import PageFooter from "./components/footer";
+import ImageSlider from "./components/image-slider";
 import NavigationBar from "./components/navigationBar";
 import { Check, WbIncandescentRounded, PeopleAltRounded, StoreRounded, LocalShippingRounded, GradeRounded, DirectionsRunRounded } from "@mui/icons-material";
 import Image from 'next/image';
@@ -80,17 +81,21 @@ export default function Home() {
             <p>Get noticed</p>
           </div>
           <div className="flex flex-col items-center text-center">
-            <StoreRounded className="h-12 w-12" />
+            <StoreRounded className="h-12 w-12 mb-5" />
             <p>Establish your brand</p>
           </div>
         </div>
-        <div className="shadow-lg h-96 m-5 rounded-3xl flex flex-row items-center">
-          <div className="flex-1 text-left pl-16">
-            <h1 className="text-4xl font-bold text-white">
-              Experience<br /> the wonders <br /> of <span className="text-green-700">top-quality</span> signs.
-            </h1>
-          </div>
-        </div>
+
+        <div className="flex flex-row items-center h-96 shadow-md rounded-3xl overflow-hidden">
+      <div className="basis-1/3 text-white font-semibold text-2xl ml-6">
+        <h1>Experience <br /> the wonders of <br /> <span className="text-green-700 font-bold">top-quality</span> signs.</h1>
+      </div>
+      <div className="basis-2/3 flex flex-row bg-lime-700 h-72 items-center justify-center overflow-hidden">
+        <ImageSlider></ImageSlider>
+      </div>
+    </div>
+
+
       </div>
 
       <PageFooter />

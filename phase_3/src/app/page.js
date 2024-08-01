@@ -7,8 +7,7 @@ import Image from 'next/image';
 export default function Home() {
   return (
     <main className="">
-      <NavigationBar />
-
+      <NavigationBar/>
       <div className="flex flex-row bg-slate-50 justify-center font-light text-xs p-2 gap-10">
         <div className="flex flex-row gap-2 items-center">
           <LocalShippingRounded className="h-5 w-5 fill-slate-600" />
@@ -100,9 +99,8 @@ export default function Home() {
     </div>
 
 
-      </div>
-
-      <PageFooter />
+    </div>
+      <PageFooter/>
     </main>
   );
 }

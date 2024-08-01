@@ -90,9 +90,9 @@ export default function Home() {
       <div className="basis-1/3 text-white font-semibold text-2xl ml-6">
         <h1>Experience <br /> the wonders of <br /> <span className="text-green-700 font-bold">top-quality</span> signs.</h1>
       </div>
-      <div className="basis-2/3 flex flex-row bg-lime-700 h-72 items-center justify-center overflow-hidden">
-        <ImageSlider></ImageSlider>
-      </div>
+      {/* <div className="basis-2/3 flex flex-row bg-lime-700 h-72 items-center justify-center overflow-hidden">
+      
+      </div> */}
     </div>
 
 

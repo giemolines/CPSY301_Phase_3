@@ -22,7 +22,7 @@ export default function NavigationBar() {
             <Link href="#" className="font-light">Sign in</Link>
           </div>
           <div>
-            <Link href="#">
+            <Link href="../cart">
               <ShoppingCartRoundedIcon className="h-5 w-5 hover:fill-slate-600 hover:scale-110 transition duration-200 ease-in-out" />
             </Link>
           </div>

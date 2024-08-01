@@ -10,7 +10,7 @@ export default function NavigationBar() {
           <Link href="#"><ListRounded className="h-8 w-8 hover:fill-slate-600 hover:scale-110 transition duration-200 ease-in-out" /></Link>
         </div>
         <div className="flex-1 flex justify-center">
-          <a href="#">
+          <a href="../">
             <img src="/ingraph_logo.png" width={80} alt="Logo" />
           </a>
         </div>

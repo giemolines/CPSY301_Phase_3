@@ -30,9 +30,10 @@ export default function Store() {
 
   return (
     <main>
+        <NavigationBar/>
         <div className='w-screen m-5'>
             <div className='items-center text-center'>
-                <h1 className='text-3xl'>Store</h1>
+                <h1 className='text-4xl font-semibold'>Store</h1>
             </div>
         {/* <div className="app__home">
       <div className='app__home_top'>
@@ -94,6 +95,8 @@ export default function Store() {
     </div> */}
 
     </div>
+    <PageFooter/>
+        
     </main>
     
   );

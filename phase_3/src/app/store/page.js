@@ -1,14 +1,17 @@
 "use client"
 import React,{useState} from 'react';
-import './App.css';
+import '../styles/App.css';
+import Image from 'next/image';
 
-import PremiumPrinting from './images/PremiumPrinting.png';
-import BannerProduct from './images/BannerProduct.png';
-import RetractableProduct from './images/RetractableProduct.png';
-import GallaryProduct from './images/GallaryProduct.png';
-import SandwichProduct from './images/SandwichProduct.png';
+// import PremiumPrinting from '/PremiumPrinting.png';
+// import BannerProduct from '/BannerProduct.png';
+// import RetractableProduct from '/RetractableProduct.png';
+// import GallaryProduct from '/GallaryProduct.png';
+// import SandwichProduct from '/SandwichProduct.png';
 
-import Product from './components/Product/Product';
+import Product from '../components/product';
+import NavigationBar from '../components/navigationBar';
+import PageFooter from '../components/footer';
 
 
 
@@ -26,7 +29,10 @@ export default function Store() {
   }
 
   return (
-    <div className="app__home">
+    <main>
+        <NavigationBar/>
+        <div className='w-screen m-5'>
+        <div className="app__home">
       <div className='app__home_top'>
         <div className='app__home_top_text'>
           <h1>Store</h1>
@@ -52,37 +58,45 @@ export default function Store() {
             </div></div>
         </div>
 
-        <img
-          src={PremiumPrinting}
+        <Image
+          src='/PremiumPrinting.png'
           alt='premium printing'
-          width='866px'
+          width={866}
+          height={866}
         />
 
       </div>
 
       <div className='app__home_products'>
         <Product
-          imageSrc={BannerProduct}
+          imageSrc='/BannerProduct.png'
           name="Banners"
           price="$9-$259" />
 
           <Product
-          imageSrc={RetractableProduct}
+          imageSrc='/RetractableProduct.png'
           name="Example Product"
           price="$120-$259" />
 
           <Product
-          imageSrc={GallaryProduct}
+          imageSrc='/GallaryProduct.png'
           name="Example Product"
           price="$56-$235" />
 
           <Product
-          imageSrc={SandwichProduct}
+          imageSrc='/SandwichProduct.png'
           name="Example Product"
           price="$175-$320" />
       </div>
       
     </div>
+
+        </div>
+        
+    <PageFooter></PageFooter>
+
+    </main>
+    
   );
 }
 

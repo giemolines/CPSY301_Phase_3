@@ -30,9 +30,11 @@ export default function Store() {
 
   return (
     <main>
-        <NavigationBar/>
         <div className='w-screen m-5'>
-        <div className="app__home">
+            <div className='items-center text-center'>
+                <h1 className='text-3xl'>Store</h1>
+            </div>
+        {/* <div className="app__home">
       <div className='app__home_top'>
         <div className='app__home_top_text'>
           <h1>Store</h1>
@@ -89,12 +91,9 @@ export default function Store() {
           price="$175-$320" />
       </div>
       
+    </div> */}
+
     </div>
-
-        </div>
-        
-    <PageFooter></PageFooter>
-
     </main>
     
   );

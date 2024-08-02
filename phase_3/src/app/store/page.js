@@ -12,6 +12,8 @@ import Image from 'next/image';
 import Product from '../components/product';
 import NavigationBar from '../components/navigationBar';
 import PageFooter from '../components/footer';
+import Banner from '../components/banner';
+import Carousel from '../components/carousel';
 
 
 
@@ -31,10 +33,15 @@ export default function Store() {
   return (
     <main>
         <NavigationBar/>
-        <div className='w-screen m-5'>
-            <div className='items-center text-center'>
-                <h1 className='text-4xl font-semibold'>Store</h1>
-            </div>
+        <div className='relative h-screen'>
+          <Banner/>
+          <div>
+            <h1 className='pl-10 pr-10 pt-8 text-4xl text-gray-500 font-semibold'><span className='text-black '>Premium Printing.</span> Delivered right to your doorstep.</h1>
+          </div>
+
+            <Carousel/>
+
+            
         {/* <div className="app__home">
       <div className='app__home_top'>
         <div className='app__home_top_text'>
@@ -61,12 +68,7 @@ export default function Store() {
             </div></div>
         </div>
 
-        <Image
-          src='/PremiumPrinting.png'
-          alt='premium printing'
-          width={866}
-          height={866}
-        />
+        
 
       </div>
 

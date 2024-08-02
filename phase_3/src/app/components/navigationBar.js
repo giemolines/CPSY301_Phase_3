@@ -35,7 +35,7 @@ export default function NavigationBar() {
           </div>
           <div>
             <Link href="../cart">
-              <ShoppingCartRoundedIcon className="h-5 w-5 text-gray-700 hover:text-gray-900 transition duration-200 ease-in-out" />
+              <ShoppingCartRoundedIcon className="h-5 w-5 hover:fill-slate-600 hover:scale-110 transition duration-200 ease-in-out" />
             </Link>
           </div>
         </div>

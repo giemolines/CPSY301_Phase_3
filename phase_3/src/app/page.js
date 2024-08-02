@@ -1,4 +1,4 @@
-
+import Banner from "./components/banner";
 import PageFooter from "./components/footer";
 import ImageSlider from "./components/image-slider";
 import NavigationBar from "./components/navigationBar";
@@ -9,21 +9,7 @@ export default function Home() {
   return (
     <main className="">
       <NavigationBar/>
-      <div className="flex flex-row bg-slate-50 justify-center font-light text-xs p-2 gap-10">
-        <div className="flex flex-row gap-2 items-center">
-          <LocalShippingRounded className="h-5 w-5 fill-slate-600" />
-          <p>Next-day delivery</p>
-        </div>
-        <div className="flex flex-row gap-2 items-center">
-          <GradeRounded className="h-5 w-5 fill-slate-600" />
-          <p>Not Satisfied? Get a full refund</p>
-        </div>
-        <div className="flex flex-row gap-2 items-center">
-          <DirectionsRunRounded className="h-5 w-5 fill-slate-600" />
-          <p>Process everything online</p>
-        </div>
-      </div>
-
+      <Banner/>
       <div className="relative bg-cover bg-center h-96 w-full" style={{ backgroundImage: "url('/Signages-cover.jpg')" }}>
         <div className="absolute inset-0 bg-gradient-to-b from-transparent to-white opacity-100"></div>
         <div className="absolute bottom-10 left-1/2 transform -translate-x-1/2 hover:scale-110 transition duration-200 ease-in-out">
@@ -101,7 +87,7 @@ export default function Home() {
 
 
     </div>
-      <PageFooter/>
+    <PageFooter/>
     </main>
   );
 }

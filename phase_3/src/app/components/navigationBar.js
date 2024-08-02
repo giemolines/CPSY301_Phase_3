@@ -6,7 +6,6 @@ import { ListRounded } from "@mui/icons-material";
 import AuthForm from '../components/AuthForm'; 
 import Image from 'next/image';
 import { HomeRounded, ShoppingCartRounded } from '@mui/icons-material';
-import Link from 'next/link';
 
 export default function NavigationBar() {
   const [menuOpen, setMenuOpen] = useState(false)
@@ -49,14 +48,14 @@ export default function NavigationBar() {
       </div>
       {isAuthFormOpen && <AuthForm onClose={closeAuthForm} />}
       <div className={menuOpen ? "font-light fixed left-0 top-0 mt-16 w-[50%] h-screen p-10 ease-in-ease-out duration-700 bg-white": "font-light fixed top-0 h-screen p-10 left-[-100%] mt-16 ease-in-ease-out duration-700 bg-white"}>
-        <div className='text-xl p-5'>
-          <Link>STORE</Link>
+        <div className='text-xl p-5 hover: hover:underline hover:scale-110 transition duration-300 ease-in-out'>
+          <Link href="../store">STORE</Link>
         </div>
-        <div className='text-xl p-5'>
-          <h1>ABOUT</h1>
+        <div className='text-xl p-5 hover:underline hover:scale-110 transition duration-300 ease-in-out'>
+          <Link href="../about">ABOUT</Link>
         </div>
-        <div className='text-xl p-5'>
-          <h1>CONTACT US</h1>
+        <div className='text-xl p-5 hover:underline hover:scale-110 transition duration-300 ease-in-out'>
+          <Link href="../contact">CONTACT US</Link>
         </div>
 
       </div>

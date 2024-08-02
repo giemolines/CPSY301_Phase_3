@@ -2,6 +2,7 @@
 import React,{useState} from 'react';
 import '../styles/App.css';
 import Image from 'next/image';
+import { ArrowBackRounded } from '@mui/icons-material';
 
 // import PremiumPrinting from '/PremiumPrinting.png';
 // import BannerProduct from '/BannerProduct.png';
@@ -14,6 +15,7 @@ import NavigationBar from '../components/navigationBar';
 import PageFooter from '../components/footer';
 import Banner from '../components/banner';
 import Carousel from '../components/carousel';
+import Link from 'next/link';
 
 
 
@@ -33,13 +35,21 @@ export default function Store() {
   return (
     <main>
         <NavigationBar/>
-        <div className='relative h-screen'>
-          <Banner/>
-          <div>
-            <h1 className='pl-10 pr-10 pt-8 text-4xl text-gray-500 font-semibold'><span className='text-black '>Premium Printing.</span> Delivered right to your doorstep.</h1>
+        <Banner/>
+        <div className='pl-10 pt-5 hover:scale-105 transition duration-300 ease-in-out items-center'>
+          <Link href='../'>
+            <ArrowBackRounded/> Back
+          </Link>
+        </div>
+        <div className='flex'>
+          <div className='flex basis-1/3 items-center'>
+            <h1 className='pl-10 pr-10 text-4xl text-gray-500 font-semibold'><span className='text-black '>Premium Printing.</span> Delivered right to your doorstep.</h1>
+          </div>
+          <div className='flex basis-2/3'>
+            <Carousel/>
           </div>
 
-            <Carousel/>
+            
 
             
         {/* <div className="app__home">

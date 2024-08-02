@@ -1,15 +1,15 @@
 import Banner from "./components/banner";
 import PageFooter from "./components/footer";
-import ImageSlider from "./components/image-slider";
+
 import NavigationBar from "./components/navigationBar";
-import { Check, WbIncandescentRounded, PeopleAltRounded, StoreRounded, LocalShippingRounded, GradeRounded, DirectionsRunRounded } from "@mui/icons-material";
+import { Check, WbIncandescentRounded, PeopleAltRounded, StoreRounded } from "@mui/icons-material";
 import Image from 'next/image';
 
 export default function Home() {
   return (
-    <main className="">
-      <NavigationBar/>
-      <Banner/>
+    <main className="flex flex-col min-h-screen">
+      <NavigationBar />
+      <Banner />
       <div className="relative bg-cover bg-center h-96 w-full" style={{ backgroundImage: "url('/Signages-cover.jpg')" }}>
         <div className="absolute inset-0 bg-gradient-to-b from-transparent to-white opacity-100"></div>
         <div className="absolute bottom-10 left-1/2 transform -translate-x-1/2 hover:scale-110 transition duration-200 ease-in-out">
@@ -18,7 +18,7 @@ export default function Home() {
       </div>
 
       <div className="flex items-center justify-center">
-        <Image src="/ingraph_logo.png" height={200} width={300} alt="ingraph logo"/>
+        <Image src="/ingraph_logo.png" height={200} width={300} alt="ingraph logo" />
       </div>
 
       <div className="text-center mt-10">
@@ -77,17 +77,13 @@ export default function Home() {
         </div>
 
         <div className="flex flex-row items-center h-96 shadow-md rounded-3xl overflow-hidden">
-      <div className="basis-1/3 text-white font-semibold text-2xl ml-6">
-        <h1>Experience <br /> the wonders of <br /> <span className="text-green-700 font-bold">top-quality</span> signs.</h1>
+          <div className="basis-1/3 text-white font-semibold text-2xl ml-6">
+            <h1>Experience <br /> the wonders of <br /> <span className="text-green-700 font-bold">top-quality</span> signs.</h1>
+          </div>
+        </div>
       </div>
-      {/* <div className="basis-2/3 flex flex-row bg-lime-700 h-72 items-center justify-center overflow-hidden">
-      
-      </div> */}
-    </div>
 
-
-    </div>
-    <PageFooter/>
+      <PageFooter />
     </main>
   );
 }

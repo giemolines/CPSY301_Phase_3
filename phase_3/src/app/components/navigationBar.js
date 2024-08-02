@@ -4,6 +4,7 @@ import Link from "next/link";
 import ShoppingCartRoundedIcon from '@mui/icons-material/ShoppingCartRounded';
 import { ListRounded } from "@mui/icons-material";
 import AuthForm from '../components/AuthForm'; 
+import Image from 'next/image';
 
 export default function NavigationBar() {
   const [isAuthFormOpen, setIsAuthFormOpen] = useState(false);
@@ -21,7 +22,7 @@ export default function NavigationBar() {
         </div>
         <div className="flex-1 flex justify-center">
           <a href="../">
-            <img src="/ingraph_logo.png" width={80} alt="Logo" />
+            <Image src="/ingraph_logo.png" width={80} height={80} alt="Logo" />
           </a>
         </div>
         <div className="flex-1 flex flex-row justify-end items-center gap-4 text-sm">

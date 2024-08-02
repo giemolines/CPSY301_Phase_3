@@ -45,7 +45,12 @@ export default function Store() {
                 <Carousel/>
               </div>
             </div>
+            <div className='text-center p-16 text-2xl text-gray-500 font-semibold'>
+            <h1>Browse our services. Choose the right product <span className='text-black underline font-bold'>for you.</span></h1>
           </div>
+          </div>
+          
+
          
 
           <div className='p-4'>

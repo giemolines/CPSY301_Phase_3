@@ -33,7 +33,7 @@ export default function Carousel() {
 
     return (
         <div className="relative p-16 w-full h-96">
-            <div className="relative w-full h-full overflow-hidden rounded-l shadow-xl">
+            <div className="relative w-full h-full overflow-hidden rounded-2xl shadow-xl">
                 <Image
                     src={images[currentIndex]}
                     alt={`Slide ${currentIndex + 1}`}

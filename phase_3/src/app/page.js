@@ -52,7 +52,9 @@ export default function Home() {
         <div className="relative h-96 w-80 rounded-3xl shadow-lg overflow-hidden hover:scale-110 transition duration-300 ease-in-out">
           <Image src="/truck-cover.jpg" alt="Truck cover" layout="fill" objectFit="cover" />
         </div>
-        <div className="relative h-96 w-80 rounded-3xl shadow-lg overflow-hidden hover:scale-110 transition duration-300 ease-in-out"></div>
+        <div className="relative h-96 w-80 rounded-3xl shadow-lg overflow-hidden hover:scale-110 transition duration-300 ease-in-out">
+          <Image src="/letter-cover.jpg" alt="lettering cover" layout="fill" objectFit="cover" />
+        </div>
       </div>
 
       <div className="text-center text-2xl font-semibold w-screen p-10">

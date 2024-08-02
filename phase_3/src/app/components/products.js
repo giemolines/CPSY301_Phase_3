@@ -50,7 +50,7 @@ export default function Products() {
           </div>
           <div className="basis-1/3 flex flex-col justify-center p-6 rounded-2xl shadow-sm">
             <h2 className="text-lg font-medium">Banners</h2>
-            <p className="mt-1 text-sm font-light">From <span className="text-green-600">$175.00 {'–'} $320.00</span></p>
+            <p className="mt-1 text-sm font-light">From <span className="text-green-600">$9.00 {'–'} $56.00</span></p>
             <Link href="#" className="font-normal hover:underline">Add to cart</Link>
           </div>
         </div>

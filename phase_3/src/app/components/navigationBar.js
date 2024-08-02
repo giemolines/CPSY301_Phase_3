@@ -5,20 +5,26 @@ import ShoppingCartRoundedIcon from '@mui/icons-material/ShoppingCartRounded';
 import { ListRounded } from "@mui/icons-material";
 import AuthForm from '../components/AuthForm'; 
 import Image from 'next/image';
+import { HomeRounded, ShoppingCartRounded } from '@mui/icons-material';
+import Link from 'next/link';
 
 export default function NavigationBar() {
+  const [menuOpen, setMenuOpen] = useState(false)
+  const handleNav = ()=> {
+    setMenuOpen(!menuOpen);
+  }
   const [isAuthFormOpen, setIsAuthFormOpen] = useState(false);
 
   const openAuthForm = () => setIsAuthFormOpen(true);
   const closeAuthForm = () => setIsAuthFormOpen(false);
 
   return (
-    <header className="sticky top-0 z-50 p-4 bg-white shadow-md">
+    <div className="sticky top-0 z-50 p-4 bg-white shadow-md">
       <div className="flex flex-row justify-between items-center mx-6">
         <div className="flex-1 flex justify-start">
-          <Link href="#">
+          <button onClick={handleNav}>
             <ListRounded className="h-8 w-8 text-gray-700 hover:text-gray-900 hover:scale-110 transition duration-200 ease-in-out" />
-          </Link>
+          </button>
         </div>
         <div className="flex-1 flex justify-center">
           <a href="../">
@@ -41,8 +47,19 @@ export default function NavigationBar() {
           </div>
         </div>
       </div>
-
       {isAuthFormOpen && <AuthForm onClose={closeAuthForm} />}
-    </header>
+      <div className={menuOpen ? "font-light fixed left-0 top-0 mt-16 w-[50%] h-screen p-10 ease-in-ease-out duration-700 bg-white": "font-light fixed top-0 h-screen p-10 left-[-100%] mt-16 ease-in-ease-out duration-700 bg-white"}>
+        <div className='text-xl p-5'>
+          <Link>STORE</Link>
+        </div>
+        <div className='text-xl p-5'>
+          <h1>ABOUT</h1>
+        </div>
+        <div className='text-xl p-5'>
+          <h1>CONTACT US</h1>
+        </div>
+
+      </div>
+    </div>
   );
 }

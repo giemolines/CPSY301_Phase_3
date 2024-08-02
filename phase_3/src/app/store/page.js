@@ -15,17 +15,6 @@ import Products from '../components/products';
 
 export default function Store() {
 
-  // eslint-disable-next-line no-unused-vars
-  const[isopen, setOpen] = useState(false);
-
-  const openModal = () => {
-    setOpen(true)
-  }
-
-  const closeModal = () => {
-    setOpen(false)
-  }
-
   return (
     <main>
         <NavigationBar/>
@@ -46,13 +35,9 @@ export default function Store() {
               </div>
             </div>
             <div className='text-center p-16 text-2xl text-gray-500 font-semibold'>
-            <h1>Browse our services. Choose the right product <span className='text-black underline font-bold'>for you.</span></h1>
+            <h1>Browse our services. Choose the right product <span className='text-black underline font-bold'>for you</span>.</h1>
           </div>
           </div>
-          
-
-         
-
           <div className='p-4'>
             <Products/>
           </div>

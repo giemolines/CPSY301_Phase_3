@@ -2,7 +2,7 @@ import CartProduct from "../components/cart_product";
 import NavigationBar from "../components/navigationBar";
 import PageFooter from "../components/footer";
 import ShippingMethod from "../components/shipping_method";
-import BannerProduct from '../../../public/BannerProduct.png';
+import BannerProduct from '../cart/banner_product.png';
 
 //temp products and shipping methods, so we can pull from db later
 

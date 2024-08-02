@@ -13,6 +13,3 @@ export default function Product({ imageSrc, name, price }) {
     </main>
   );
 }
-
-
-/**/

@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import './AuthForm.css';
 
 function AuthForm({ onClose }) {
   const [email, setEmail] = useState('');
@@ -17,7 +16,7 @@ function AuthForm({ onClose }) {
     event.preventDefault();
     console.log('Submitted email:', email);
     console.log('Submitted password:', password);
-    onClose(); // Close the modal after submission
+    onClose();
   };
 
   return (

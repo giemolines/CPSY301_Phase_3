@@ -33,7 +33,7 @@ export default function Carousel() {
 
     return (
         <div className="relative p-16 w-full h-96">
-            <div className="relative w-full h-full overflow-hidden rounded-xl shadow-xl">
+            <div className="relative w-full h-full overflow-hidden rounded-l shadow-xl">
                 <Image
                     src={images[currentIndex]}
                     alt={`Slide ${currentIndex + 1}`}
@@ -42,13 +42,13 @@ export default function Carousel() {
                 />
             </div>
             <button
-                className="absolute top-1/2 left-4 transform -translate-y-1/2 text-black p-2 hover:scale-105 transition duration-100 ease-in-out"
+                className="absolute top-1/2 left-4 transform -translate-y-1/2 text-black p-2 hover:scale-110 transition duration-200 ease-in-out"
                 onClick={handlePrev}
             >
                 <ArrowBackIosRounded/>
             </button>
             <button
-                className="absolute top-1/2 right-4 transform -translate-y-1/2 text-black p-2 hover:scale-105 transition duration-100 ease-in-out"
+                className="absolute top-1/2 right-4 transform -translate-y-1/2 text-black p-2 hover:scale-110 transition duration-200 ease-in-out"
                 onClick={handleNext}
             >
                 <ArrowForwardIosRounded/>
